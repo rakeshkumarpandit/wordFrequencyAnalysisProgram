@@ -46,8 +46,11 @@ public class TrieNode {
     return isWord;
   }
 
+  /**
+   * increases frequency of word in trie
+   */
   public void increaseFreq() {
-    synchronized (this){
+    synchronized (this) {
       this.freq++;
     }
   }
